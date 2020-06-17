@@ -16,6 +16,7 @@ WORKDIR /usr/share/logstash
 
 # copy mysql-connector
 COPY config/mysql-connector-java-8.0.18.jar logstash-core/lib/jars/
+COPY config/postgresql-42.2.14.jar logstash-core/lib/jars/
 
 # copy config files
 COPY config/logstash.yml config/logstash.yml
